@@ -1,0 +1,60 @@
+{
+    "title": "我的笔记本",
+    "description": "用于记录日常笔记。",
+    "author": "李芃",
+    "output.name": "site",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "root": ".",
+    "plugins": [
+        "-lunr",
+        "-search",
+        "-sharing",
+        "search-pro",
+        "advanced-emoji",
+        "splitter",
+        "tbfed-pagefooter",
+        "favicon",
+        "expandable-chapters-small",
+        "anchor-navigation-ex-toc",
+        "code",
+        "todo",
+        "github",
+        "pageview-count",
+        "lightbox",
+        "katex"
+    ],
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": false
+        },
+       "search-pro": {
+        "cutWordLib": "nodejieba",
+        "defineWord" : ["Gitbook Use"]
+        },
+        "tbfed-pagefooter": {
+            "copyright": "",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "favicon": {
+            "shortcut": "assets/images/favicon.ico",
+            "bookmark": "assets/images/favicon.ico"
+        },
+        "anchor-navigation-ex": {
+            "associatedWithSummary":false,
+            "showLevel":true,
+            "multipleH1": true,
+            "mode": "float",
+            "pageTop": {
+            "showLevelIcon": false,
+            "level1Icon": "fa fa-hand-o-right",
+            "level2Icon": "fa fa-hand-o-right",
+            "level3Icon": "fa fa-hand-o-right"
+            }
+        },
+        "github": {
+            "url": "https://github.com/mufanlee"
+        }
+    }
+}
