@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>二分查找 · 我的笔记本</title>
+        <title>位运算 · 我的笔记本</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -94,10 +94,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../segment-tree/线段树.html" />
+    <link rel="next" href="../../cp-algorithms/" />
     
     
-    <link rel="prev" href="../" />
+    <link rel="prev" href="../binary-indexed-tree/树状数组.html" />
     
 
     
@@ -162,9 +162,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.2.1" data-path="二分查找.html">
+        <li class="chapter " data-level="1.2.1" data-path="../binary-search/二分查找.html">
             
-                <a href="二分查找.html">
+                <a href="../binary-search/二分查找.html">
             
                     
                     二分查找
@@ -201,9 +201,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="../bit/位运算.html">
+        <li class="chapter active" data-level="1.2.4" data-path="位运算.html">
             
-                <a href="../bit/位运算.html">
+                <a href="位运算.html">
             
                     
                     位运算
@@ -436,7 +436,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >二分查找</a>
+        <a href="../.." >位运算</a>
     </h1>
 </div>
 
@@ -451,9 +451,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x4E8C;&#x5206;&#x67E5;&#x627E;"><b>1. </b>&#x4E8C;&#x5206;&#x67E5;&#x627E;</a></li></ul></div><a href="#&#x4E8C;&#x5206;&#x67E5;&#x627E;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x4E8C;&#x5206;&#x67E5;&#x627E;"><a name="&#x4E8C;&#x5206;&#x67E5;&#x627E;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x5206;&#x67E5;&#x627E;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x4E8C;&#x5206;&#x67E5;&#x627E;</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x4F4D;&#x8FD0;&#x7B97;"><b>1. </b>&#x4F4D;&#x8FD0;&#x7B97;</a></li></ul></div><a href="#&#x4F4D;&#x8FD0;&#x7B97;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x4F4D;&#x8FD0;&#x7B97;"><a name="&#x4F4D;&#x8FD0;&#x7B97;" class="anchor-navigation-ex-anchor" href="#&#x4F4D;&#x8FD0;&#x7B97;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x4F4D;&#x8FD0;&#x7B97;</h1>
+<h3 id="lowbit&#x51FD;&#x6570;"><a name="lowbit&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#lowbit&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>lowbit()&#x51FD;&#x6570;</h3>
+<p>&#x4FDD;&#x7559; <code>x</code> &#x4E8C;&#x8FDB;&#x5236;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4F4D;&#xFF08;&#x80FD;&#x6574;&#x9664; <code>x</code> &#x7684;&#x6700;&#x5927;&#x7684; <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">2^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.664392em;"></span><span class="strut bottom" style="height:0.664392em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathrm">2</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathit mtight">n</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span>&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-java">x - (x &amp; (x - <span class="hljs-number">1</span>))
+</code></pre>
+<pre><code class="lang-java">x &amp; ~(x - <span class="hljs-number">1</span>)
+</code></pre>
+<pre><code class="lang-java">x &amp; -x
+</code></pre>
+<p>&#x539F;&#x7406;&#xFF1A;&#x4E8C;&#x8FDB;&#x5236;&#x8865;&#x7801;</p>
+<p>&#x5C06; <code>x</code> &#x4E8C;&#x8FDB;&#x5236;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4F4D;&#x53D8;&#x4E3A;0&#xFF1A;</p>
+<pre><code class="lang-java">x &amp; (x - <span class="hljs-number">1</span>)
+</code></pre>
 <footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2021-04-07 20:11:01
+2021-03-21 11:56:30
 </span></footer>
                                 
                                 </section>
@@ -481,12 +493,12 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 算法">
+                <a href="../binary-indexed-tree/树状数组.html" class="navigation navigation-prev " aria-label="Previous page: 树状数组">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../segment-tree/线段树.html" class="navigation navigation-next " aria-label="Next page: 线段树">
+                <a href="../../cp-algorithms/" class="navigation navigation-next " aria-label="Next page: CP-Algorithms">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -497,7 +509,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"二分查找","level":"1.2.1","depth":2,"next":{"title":"线段树","level":"1.2.2","depth":2,"path":"algorithms/segment-tree/线段树.md","ref":"algorithms/segment-tree/线段树.md","articles":[]},"previous":{"title":"算法","level":"1.2","depth":1,"path":"algorithms/README.md","ref":"algorithms/README.md","articles":[{"title":"二分查找","level":"1.2.1","depth":2,"path":"algorithms/binary-search/二分查找.md","ref":"algorithms/binary-search/二分查找.md","articles":[]},{"title":"线段树","level":"1.2.2","depth":2,"path":"algorithms/segment-tree/线段树.md","ref":"algorithms/segment-tree/线段树.md","articles":[]},{"title":"树状数组","level":"1.2.3","depth":2,"path":"algorithms/binary-indexed-tree/树状数组.md","ref":"algorithms/binary-indexed-tree/树状数组.md","articles":[]},{"title":"位运算","level":"1.2.4","depth":2,"path":"algorithms/bit/位运算.md","ref":"algorithms/bit/位运算.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-pro","advanced-emoji","splitter","tbfed-pagefooter","favicon","expandable-chapters-small","anchor-navigation-ex-toc","code","todo","github","pageview-count","lightbox","katex","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/mufanlee"},"livereload":{},"todo":{},"splitter":{},"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"code":{"copyButtons":true},"anchor-navigation-ex-toc":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"showLevel":true,"multipleH1":true,"mode":"float","pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"}},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico"},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"expandable-chapters-small":{},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"李芃","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"我的笔记本","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"用于记录日常笔记。"},"file":{"path":"algorithms/binary-search/二分查找.md","mtime":"2021-04-07T12:11:01.625Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-11T12:13:19.820Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"位运算","level":"1.2.4","depth":2,"next":{"title":"CP-Algorithms","level":"1.3","depth":1,"path":"cp-algorithms/README.md","ref":"cp-algorithms/README.md","articles":[{"title":"子掩码枚举","level":"1.3.1","depth":2,"path":"cp-algorithms/子掩码枚举.md","ref":"cp-algorithms/子掩码枚举.md","articles":[]}]},"previous":{"title":"树状数组","level":"1.2.3","depth":2,"path":"algorithms/binary-indexed-tree/树状数组.md","ref":"algorithms/binary-indexed-tree/树状数组.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-pro","advanced-emoji","splitter","tbfed-pagefooter","favicon","expandable-chapters-small","anchor-navigation-ex-toc","code","todo","github","pageview-count","lightbox","katex","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/mufanlee"},"livereload":{},"todo":{},"splitter":{},"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"code":{"copyButtons":true},"anchor-navigation-ex-toc":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"showLevel":true,"multipleH1":true,"mode":"float","pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"}},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico"},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"expandable-chapters-small":{},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"李芃","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"我的笔记本","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"用于记录日常笔记。"},"file":{"path":"algorithms/bit/位运算.md","mtime":"2021-03-21T03:56:30.373Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-11T12:13:19.820Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

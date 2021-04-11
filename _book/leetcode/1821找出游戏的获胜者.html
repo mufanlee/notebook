@@ -1,0 +1,636 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1821. 找出游戏的获胜者 · 我的笔记本</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="李芃">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="1822最少侧跳次数.html" />
+    
+    
+    <link rel="prev" href="1820数组元素积的符号.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../algorithms/">
+            
+                <a href="../algorithms/">
+            
+                    
+                    算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../algorithms/binary-search/二分查找.html">
+            
+                <a href="../algorithms/binary-search/二分查找.html">
+            
+                    
+                    二分查找
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../algorithms/segment-tree/线段树.html">
+            
+                <a href="../algorithms/segment-tree/线段树.html">
+            
+                    
+                    线段树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../algorithms/binary-indexed-tree/树状数组.html">
+            
+                <a href="../algorithms/binary-indexed-tree/树状数组.html">
+            
+                    
+                    树状数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../algorithms/bit/位运算.html">
+            
+                <a href="../algorithms/bit/位运算.html">
+            
+                    
+                    位运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../cp-algorithms/">
+            
+                <a href="../cp-algorithms/">
+            
+                    
+                    CP-Algorithms
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../cp-algorithms/子掩码枚举.html">
+            
+                <a href="../cp-algorithms/子掩码枚举.html">
+            
+                    
+                    子掩码枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Leetcode
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="1820数组元素积的符号.html">
+            
+                <a href="1820数组元素积的符号.html">
+            
+                    
+                    1820. 数组元素积的符号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="1821找出游戏的获胜者.html">
+            
+                <a href="1821找出游戏的获胜者.html">
+            
+                    
+                    1821. 找出游戏的获胜者
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="1822最少侧跳次数.html">
+            
+                <a href="1822最少侧跳次数.html">
+            
+                    
+                    1822. 最少侧跳次数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="1823求出 MK 平均值.html">
+            
+                <a href="1823求出 MK 平均值.html">
+            
+                    
+                    1823. 求出 MK 平均值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="lcp-28采购方案.html">
+            
+                <a href="lcp-28采购方案.html">
+            
+                    
+                    LCP 28. 采购方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="lcp-29乐团站位.html">
+            
+                <a href="lcp-29乐团站位.html">
+            
+                    
+                    LCP 29. 乐团站位
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="lcp-30魔塔游戏.html">
+            
+                <a href="lcp-30魔塔游戏.html">
+            
+                    
+                    LCP 30. 魔塔游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="lcp-31变换的迷宫.html">
+            
+                <a href="lcp-31变换的迷宫.html">
+            
+                    
+                    LCP 31. 变换的迷宫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="weekly-contest/">
+            
+                <a href="weekly-contest/">
+            
+                    
+                    周赛
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.9.1" data-path="weekly-contest/第236场.html">
+            
+                <a href="weekly-contest/第236场.html">
+            
+                    
+                    第236场
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1821. 找出游戏的获胜者</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#5727-&#x627E;&#x51FA;&#x6E38;&#x620F;&#x7684;&#x83B7;&#x80DC;&#x8005;"><b>1. </b>5727. &#x627E;&#x51FA;&#x6E38;&#x620F;&#x7684;&#x83B7;&#x80DC;&#x8005;</a></li></ul></div><a href="#5727-&#x627E;&#x51FA;&#x6E38;&#x620F;&#x7684;&#x83B7;&#x80DC;&#x8005;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="5727-&#x627E;&#x51FA;&#x6E38;&#x620F;&#x7684;&#x83B7;&#x80DC;&#x8005;"><a name="5727-&#x627E;&#x51FA;&#x6E38;&#x620F;&#x7684;&#x83B7;&#x80DC;&#x8005;" class="anchor-navigation-ex-anchor" href="#5727-&#x627E;&#x51FA;&#x6E38;&#x620F;&#x7684;&#x83B7;&#x80DC;&#x8005;"><i class="fa fa-link" aria-hidden="true"></i></a>1. 5727. &#x627E;&#x51FA;&#x6E38;&#x620F;&#x7684;&#x83B7;&#x80DC;&#x8005;</h1>
+<h3 id="&#x9898;&#x76EE;&#xFF08;&#x4E2D;&#x7B49;&#xFF09;"><a name="&#x9898;&#x76EE;&#xFF08;&#x4E2D;&#x7B49;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x9898;&#x76EE;&#xFF08;&#x4E2D;&#x7B49;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9898;&#x76EE;&#xFF08;&#x4E2D;&#x7B49;&#xFF09;</h3>
+<p>&#x5171;&#x6709; <code>n</code> &#x540D;&#x5C0F;&#x4F19;&#x4F34;&#x4E00;&#x8D77;&#x505A;&#x6E38;&#x620F;&#x3002;&#x5C0F;&#x4F19;&#x4F34;&#x4EEC;&#x56F4;&#x6210;&#x4E00;&#x5708;&#xFF0C;&#x6309; <strong>&#x987A;&#x65F6;&#x9488;&#x987A;&#x5E8F;</strong> &#x4ECE; <code>1</code> &#x5230; <code>n</code> &#x7F16;&#x53F7;&#x3002;&#x786E;&#x5207;&#x5730;&#x8BF4;&#xFF0C;&#x4ECE;&#x7B2C; <code>i</code> &#x540D;&#x5C0F;&#x4F19;&#x4F34;&#x987A;&#x65F6;&#x9488;&#x79FB;&#x52A8;&#x4E00;&#x4F4D;&#x4F1A;&#x5230;&#x8FBE;&#x7B2C; <code>(i+1)</code> &#x540D;&#x5C0F;&#x4F19;&#x4F34;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x5176;&#x4E2D; <code>1 &lt;= i &lt; n</code> &#xFF0C;&#x4ECE;&#x7B2C; <code>n</code> &#x540D;&#x5C0F;&#x4F19;&#x4F34;&#x987A;&#x65F6;&#x9488;&#x79FB;&#x52A8;&#x4E00;&#x4F4D;&#x4F1A;&#x56DE;&#x5230;&#x7B2C; <code>1</code> &#x540D;&#x5C0F;&#x4F19;&#x4F34;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p>&#x6E38;&#x620F;&#x9075;&#x5FAA;&#x5982;&#x4E0B;&#x89C4;&#x5219;&#xFF1A;</p>
+<ol>
+<li>&#x4ECE;&#x7B2C; <code>1</code> &#x540D;&#x5C0F;&#x4F19;&#x4F34;&#x6240;&#x5728;&#x4F4D;&#x7F6E; &#x5F00;&#x59CB; &#x3002;</li>
+<li>&#x6CBF;&#x7740;&#x987A;&#x65F6;&#x9488;&#x65B9;&#x5411;&#x6570; <code>k</code> &#x540D;&#x5C0F;&#x4F19;&#x4F34;&#xFF0C;&#x8BA1;&#x6570;&#x65F6;&#x9700;&#x8981; <strong>&#x5305;&#x542B;</strong> &#x8D77;&#x59CB;&#x65F6;&#x7684;&#x90A3;&#x4F4D;&#x5C0F;&#x4F19;&#x4F34;&#x3002;&#x9010;&#x4E2A;&#x7ED5;&#x5708;&#x8FDB;&#x884C;&#x8BA1;&#x6570;&#xFF0C;&#x4E00;&#x4E9B;&#x5C0F;&#x4F19;&#x4F34;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x6570;&#x8FC7;&#x4E0D;&#x6B62;&#x4E00;&#x6B21;&#x3002;</li>
+<li>&#x4F60;&#x6570;&#x5230;&#x7684;&#x6700;&#x540E;&#x4E00;&#x540D;&#x5C0F;&#x4F19;&#x4F34;&#x9700;&#x8981;&#x79BB;&#x5F00;&#x5708;&#x5B50;&#xFF0C;&#x5E76;&#x89C6;&#x4F5C;&#x8F93;&#x6389;&#x6E38;&#x620F;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x5708;&#x5B50;&#x4E2D;&#x4ECD;&#x7136;&#x6709;&#x4E0D;&#x6B62;&#x4E00;&#x540D;&#x5C0F;&#x4F19;&#x4F34;&#xFF0C;&#x4ECE;&#x521A;&#x521A;&#x8F93;&#x6389;&#x7684;&#x5C0F;&#x4F19;&#x4F34;&#x7684; <strong>&#x987A;&#x65F6;&#x9488;&#x4E0B;&#x4E00;&#x4F4D;</strong> &#x5C0F;&#x4F19;&#x4F34; &#x5F00;&#x59CB;&#xFF0C;&#x56DE;&#x5230;&#x6B65;&#x9AA4; <code>2</code> &#x7EE7;&#x7EED;&#x6267;&#x884C;&#x3002;</li>
+<li>&#x5426;&#x5219;&#xFF0C;&#x5708;&#x5B50;&#x4E2D;&#x6700;&#x540E;&#x4E00;&#x540D;&#x5C0F;&#x4F19;&#x4F34;&#x8D62;&#x5F97;&#x6E38;&#x620F;&#x3002;
+ &#x7ED9;&#x4F60;&#x53C2;&#x4E0E;&#x6E38;&#x620F;&#x7684;&#x5C0F;&#x4F19;&#x4F34;&#x603B;&#x6570; <code>n</code> &#xFF0C;&#x548C;&#x4E00;&#x4E2A;&#x6574;&#x6570; <code>k</code> &#xFF0C;&#x8FD4;&#x56DE;&#x6E38;&#x620F;&#x7684;&#x83B7;&#x80DC;&#x8005;&#x3002;</li>
+</ol>
+<p>&#x793A;&#x4F8B; 1&#xFF1A;</p>
+<p><a href="https://assets.leetcode.com/uploads/2021/03/25/ic234-q2-ex11.png" data-lightbox="53ab0829-31b8-4450-a614-80391ead2b15" data-title="img" target="_blank"><img src="https://assets.leetcode.com/uploads/2021/03/25/ic234-q2-ex11.png" alt="img"></a></p>
+<blockquote>
+<p>&#x8F93;&#x5165;&#xFF1A;n = 5, k = 2
+&#x8F93;&#x51FA;&#xFF1A;3
+&#x89E3;&#x91CA;&#xFF1A;&#x6E38;&#x620F;&#x8FD0;&#x884C;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#xFF1A;
+1) &#x4ECE;&#x5C0F;&#x4F19;&#x4F34; 1 &#x5F00;&#x59CB;&#x3002;
+2) &#x987A;&#x65F6;&#x9488;&#x6570; 2 &#x540D;&#x5C0F;&#x4F19;&#x4F34;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5C0F;&#x4F19;&#x4F34; 1 &#x548C; 2 &#x3002;
+3) &#x5C0F;&#x4F19;&#x4F34; 2 &#x79BB;&#x5F00;&#x5708;&#x5B50;&#x3002;&#x4E0B;&#x4E00;&#x6B21;&#x4ECE;&#x5C0F;&#x4F19;&#x4F34; 3 &#x5F00;&#x59CB;&#x3002;
+4) &#x987A;&#x65F6;&#x9488;&#x6570; 2 &#x540D;&#x5C0F;&#x4F19;&#x4F34;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5C0F;&#x4F19;&#x4F34; 3 &#x548C; 4 &#x3002;
+5) &#x5C0F;&#x4F19;&#x4F34; 4 &#x79BB;&#x5F00;&#x5708;&#x5B50;&#x3002;&#x4E0B;&#x4E00;&#x6B21;&#x4ECE;&#x5C0F;&#x4F19;&#x4F34; 5 &#x5F00;&#x59CB;&#x3002;
+6) &#x987A;&#x65F6;&#x9488;&#x6570; 2 &#x540D;&#x5C0F;&#x4F19;&#x4F34;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5C0F;&#x4F19;&#x4F34; 5 &#x548C; 1 &#x3002;
+7) &#x5C0F;&#x4F19;&#x4F34; 1 &#x79BB;&#x5F00;&#x5708;&#x5B50;&#x3002;&#x4E0B;&#x4E00;&#x6B21;&#x4ECE;&#x5C0F;&#x4F19;&#x4F34; 3 &#x5F00;&#x59CB;&#x3002;
+8) &#x987A;&#x65F6;&#x9488;&#x6570; 2 &#x540D;&#x5C0F;&#x4F19;&#x4F34;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5C0F;&#x4F19;&#x4F34; 3 &#x548C; 5 &#x3002;
+9) &#x5C0F;&#x4F19;&#x4F34; 5 &#x79BB;&#x5F00;&#x5708;&#x5B50;&#x3002;&#x53EA;&#x5269;&#x4E0B;&#x5C0F;&#x4F19;&#x4F34; 3 &#x3002;&#x6240;&#x4EE5;&#x5C0F;&#x4F19;&#x4F34; 3 &#x662F;&#x6E38;&#x620F;&#x7684;&#x83B7;&#x80DC;&#x8005;&#x3002;</p>
+</blockquote>
+<p>&#x793A;&#x4F8B; 2&#xFF1A;</p>
+<blockquote>
+<p> &#x8F93;&#x5165;&#xFF1A;n = 6, k = 5
+&#x8F93;&#x51FA;&#xFF1A;1
+&#x89E3;&#x91CA;&#xFF1A;&#x5C0F;&#x4F19;&#x4F34;&#x79BB;&#x5F00;&#x5708;&#x5B50;&#x7684;&#x987A;&#x5E8F;&#xFF1A;5&#x3001;4&#x3001;6&#x3001;2&#x3001;3 &#x3002;&#x5C0F;&#x4F19;&#x4F34; 1 &#x662F;&#x6E38;&#x620F;&#x7684;&#x83B7;&#x80DC;&#x8005;&#x3002;</p>
+</blockquote>
+<p>&#x63D0;&#x793A;&#xFF1A;</p>
+<ul>
+<li><code>1 &lt;= k &lt;= n &lt;= 500</code></li>
+</ul>
+<h3 id="&#x89E3;&#x9898;&#x601D;&#x8DEF;"><a name="&#x89E3;&#x9898;&#x601D;&#x8DEF;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x9898;&#x601D;&#x8DEF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89E3;&#x9898;&#x601D;&#x8DEF;</h3>
+<p>&#x7ECF;&#x5178;&#x7684;&#x7EA6;&#x745F;&#x592B;&#x73AF;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x770B;&#x9898;&#x76EE;&#x7ED9;&#x7684;&#x6570;&#x636E;&#x8303;&#x56F4;&#x53EF;&#x77E5;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x66B4;&#x529B;&#x6A21;&#x62DF;&#x7684;&#x65B9;&#x5F0F;&#x89E3;&#x51B3;&#x3002;</p>
+<h4 id="&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x66B4;&#x529B;&#x6A21;&#x62DF;"><a name="&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x66B4;&#x529B;&#x6A21;&#x62DF;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x66B4;&#x529B;&#x6A21;&#x62DF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x66B4;&#x529B;&#x6A21;&#x62DF;</h4>
+<p>&#x4F7F;&#x7528;&#x4E00;&#x4E2A; <code>List</code> &#x7EF4;&#x62A4; <code>n</code> &#x4E2A;&#x5C0F;&#x4F19;&#x4F34;&#xFF0C;&#x5F53;&#x5C0F;&#x4F19;&#x4F34;&#x6570;&#x76EE;&#x5927;&#x4E8E; <code>1</code>&#xFF0C;&#x6BCF;&#x6B21;&#x4ECE;&#x4E2D;&#x79FB;&#x9664;&#x7B2C; <code>k</code> &#x540D;&#x5C0F;&#x4F19;&#x4F34;&#xFF0C;&#x7531;&#x4E8E; <code>k</code> &#x53EF;&#x4EE5;&#x5927;&#x4E8E; &#x5C0F;&#x4F19;&#x4F34;&#x6570;<code>n</code>&#xFF0C;&#x6545; &#x79FB;&#x9664;&#x5C0F;&#x4F19;&#x4F34; <code>id</code> &#x4E3A; <code>(id + k - 1) % n</code>&#xFF0C;&#x6700;&#x540E;&#x8FD4;&#x56DE;&#x5269;&#x4F59;&#x7684;&#x4E00;&#x4E2A;&#x5C0F;&#x4F19;&#x4F34;&#x3002;</p>
+<h3 id="&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x6570;&#x5B66;&#x2014;&#x2014;&#x9012;&#x63A8;&#x516C;&#x5F0F;"><a name="&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x6570;&#x5B66;&#x2014;&#x2014;&#x9012;&#x63A8;&#x516C;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x6570;&#x5B66;&#x2014;&#x2014;&#x9012;&#x63A8;&#x516C;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x6570;&#x5B66;&#x2014;&#x2014;&#x9012;&#x63A8;&#x516C;&#x5F0F;</h3>
+<p>&#x7EA6;&#x745F;&#x592B;&#x73AF;&#x9012;&#x63A8;&#x516C;&#x5F0F;&#xFF1A;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo>(</mo><mi>n</mi><mo separator="true">,</mo><mi>k</mi><mo>)</mo><mo>=</mo><mo>(</mo><mi>f</mi><mo>(</mo><mi>n</mi><mo>&#x2212;</mo><mn>1</mn><mo separator="true">,</mo><mi>k</mi><mo>)</mo><mo>+</mo><mi>k</mi><mo>)</mo><mi mathvariant="normal">%</mi><mi>n</mi></mrow><annotation encoding="application/x-tex"> f(n, k) = (f(n - 1, k) + k) \% n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mclose">)</span><span class="mrel">=</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mbin">&#x2212;</span><span class="mord mathrm">1</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mclose">)</span><span class="mbin">+</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mclose">)</span><span class="mord mathrm">%</span><span class="mord mathit">n</span></span></span></span></p>
+<p>&#x53C2;&#x8003;&#xFF1A;<a href="https://blog.csdn.net/u011500062/article/details/72855826" target="_blank">https://blog.csdn.net/u011500062/article/details/72855826</a></p>
+<h3 id="&#x4EE3;&#x7801;"><a name="&#x4EE3;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x4EE3;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EE3;&#x7801;</h3>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">findTheWinner</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n, <span class="hljs-keyword">int</span> k)</span> </span>{
+        List&lt;Integer&gt; nums = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) {
+            nums.add(i + <span class="hljs-number">1</span>);
+        }
+
+        <span class="hljs-keyword">int</span> id = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">while</span> (n &gt; <span class="hljs-number">1</span>) {
+            id = (id + k - <span class="hljs-number">1</span>) % n;
+            nums.remove(id);
+            n--;
+        }
+        <span class="hljs-keyword">return</span> nums.get(<span class="hljs-number">0</span>);
+    }
+}
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">findTheWinner</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n, <span class="hljs-keyword">int</span> k)</span> </span>{
+        <span class="hljs-keyword">return</span> f(n, k) + <span class="hljs-number">1</span>;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> <span class="hljs-title">f</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n, <span class="hljs-keyword">int</span> k)</span> </span>{
+        <span class="hljs-keyword">if</span> (n == <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">return</span> (f(n - <span class="hljs-number">1</span>, k) + k) % n;
+    }
+}
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">findTheWinner</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n, <span class="hljs-keyword">int</span> k)</span> </span>{
+        <span class="hljs-keyword">int</span> ans = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">2</span>; i &lt;= n; i++) {
+            ans = (ans + k) % i;
+        }
+        <span class="hljs-keyword">return</span> ans + <span class="hljs-number">1</span>;
+    }
+}
+</code></pre>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2021-04-11 20:13:14
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1820数组元素积的符号.html" class="navigation navigation-prev " aria-label="Previous page: 1820. 数组元素积的符号">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="1822最少侧跳次数.html" class="navigation navigation-next " aria-label="Next page: 1822. 最少侧跳次数">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1821. 找出游戏的获胜者","level":"1.4.2","depth":2,"next":{"title":"1822. 最少侧跳次数","level":"1.4.3","depth":2,"path":"leetcode/1822最少侧跳次数.md","ref":"leetcode/1822最少侧跳次数.md","articles":[]},"previous":{"title":"1820. 数组元素积的符号","level":"1.4.1","depth":2,"path":"leetcode/1820数组元素积的符号.md","ref":"leetcode/1820数组元素积的符号.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-pro","advanced-emoji","splitter","tbfed-pagefooter","favicon","expandable-chapters-small","anchor-navigation-ex-toc","code","todo","github","pageview-count","lightbox","katex","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/mufanlee"},"livereload":{},"todo":{},"splitter":{},"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"code":{"copyButtons":true},"anchor-navigation-ex-toc":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"showLevel":true,"multipleH1":true,"mode":"float","pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"}},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico"},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"expandable-chapters-small":{},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"李芃","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"我的笔记本","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"用于记录日常笔记。"},"file":{"path":"leetcode/1821找出游戏的获胜者.md","mtime":"2021-04-11T12:13:14.498Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-11T12:13:19.820Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
